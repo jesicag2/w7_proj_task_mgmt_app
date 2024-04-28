@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./static/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<style>
+    .card2 {
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #343a40;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .card-body2 {
+        padding: 10px;
+    }
+
+    .accordion-item {
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .accordion-button {
+        color: #343a40;
+        padding: 20px;
+    }
+
+    .accordion-body {
+        padding: 10px;
+        color: #343a40
+    }
+    
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TaskWave</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./task_creation.html">Create Task</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Task Details
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">High Priority Task(s)</a></li>
+                            <li><a class="dropdown-item" href="#">Medium Priority Task(s)</a></li>
+                            <li><a class="dropdown-item" href="#">Low Priority Task(s)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./task_details.html">Show all Tasks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Add Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="./register.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Task Cards -->
+    <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card2">
+                <div class="card-body2">
+                    <h5 class="card-title">Task Name</h5>
+                    <p class="card-text">Description: Task description will go here.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Due Date: May 31, 2024</li>
+                        <li class="list-group-item">Priority: High</li>
+                    </ul><br>
+                    <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card2">
+                <div class="card-body2">
+                    <h5 class="card-title">Task Name</h5>
+                    <p class="card-text">Description: Task description will go here.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Due Date: June 30, 2024</li>
+                        <li class="list-group-item">Priority: Medium</li>
+                    </ul><br>
+                    <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card2">
+                <div class="card-body2">
+                    <h5 class="card-title">Task Name</h5>
+                    <p class="card-text">Description: Task description will go here.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Due Date: July 31, 2024</li>
+                        <li class="list-group-item">Priority: Low</li>
+                    </ul><br>
+                    <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordian Items -->
+    <!-- To-Do Items -->
+    <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    To-Do Items
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card2">
+                                    <div class="card-body2">
+                                        <h5 class="card-title">Task Name 1</h5>
+                                        <p class="card-text">Description: Task description will go here.</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Due Date: May 31, 2024</li>
+                                            <li class="list-group-item">Priority: High</li>
+                                        </ul><br>
+                                        <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card2">
+                                    <div class="card-body2">
+                                        <h5 class="card-title">Task Name 2</h5>
+                                        <p class="card-text">Description: Task description will go here.</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Due Date: May 31, 2024</li>
+                                        </ul><br>
+                                        <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card2">
+                                    <div class="card-body2">
+                                        <h5 class="card-title">Task Name 3</h5>
+                                        <p class="card-text">Description: Task description will go here.</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Due Date: May 31, 2024</li>
+                                        </ul><br>
+                                        <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Completed -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Completed Tasks
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card2">
+                        <div class="card-body2">
+                            <h5 class="card-title">Task Name</h5>
+                            <p class="card-text">Description: Task description will go here.</p>
+                            <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card2">
+                        <div class="card-body2">
+                            <h5 class="card-title">Task Name</h5>
+                            <p class="card-text">Description: Task description will go here.</p>
+                            <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card2">
+                        <div class="card-body2">
+                            <h5 class="card-title">Task Name</h5>
+                            <p class="card-text">Description: Task description will go here.</p>
+                            <a href="./task_details.html" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

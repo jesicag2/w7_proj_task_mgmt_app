@@ -7,16 +7,43 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- Add Style -->
+<link rel="stylesheet" href="./static/main.css">
 <title>Task Details</title>
 </head>
+<style>
+    h1{
+        font-family:'La Belle Aurore', cursive ;
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    h6{
+        font-weight: bold;
+    }
+    .card2 {
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #343a40; 
+        border: none; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px; 
+        border-radius: 5px;
+    }
+
+    .card-body2{
+        padding: 10px; 
+    }
+    
+</style>
+
 <body>
 
-    <main class="container my-4 p-3 border rounded shadow">
-        <div class="card">
+    <div class="container col-md-6">
+        <!-- Header -->
+        <h1 class="text-center mt-5">TaskWave</h1>
+        <!-- Card -->
+        <div class="card2">
             <h5 class="card-header text-center">Task Details</h5>
-            <div class="card-body">
+            <div class="card-body2">
                 <h5 class="card-title">Task Name</h5><hr>
                 <h6 class="card-title">Description:</h6>
                 <p class="card-text">The task description will display here.</p>
@@ -31,8 +58,7 @@
                 <h6 class="card-title">Comments:</h6>
                 <p class="card-text">Any comments regarding task shall be added here.</p>
             </div>
-        </div>
-    </main>
+    </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>

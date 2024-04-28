@@ -7,50 +7,81 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- Add Style -->
+<link rel="stylesheet" href="./static/main.css">
 <title>Task Creation</title>
+
+<style>
+        
+    h1{
+        font-family:'La Belle Aurore', cursive ;
+        font-size: 60px;
+        font-weight: 700;
+    }
+    h6{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    .card2 {
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #343a40; 
+        border: none; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px; 
+        border-radius: 5px;
+    }
+
+    
+    </style>
 </head>
 
 <body>
-    <main class="container my-4 p-3 border rounded shadow">
-        <h3 class="text-center">Let's Create a Task!</h3>
-        <form class="row needs-validation g-3 p-2" novalidate>
+
+    <div class="container col-md-6">
+        <!-- Header -->
+        <h1 class="text-center mt-5">TaskWave</h1>
+        <h6 class="text-center ">Let's Create a Task!</h6>
+        <!-- Card -->
+        <div class="card2">
+            <form class="row needs-validation g-3 p-2" novalidate>
             
-            <!-- Task Name --> 
-            <!-- maybe change class to mb-3 form-control -->
-            <div class="form-label">
-                <label for="taskname" class="form-label">Task Name:</label>
-                <input type="text" class="form-control" id="taskname" placeholder="Econ 302 Homework" required>
-            </div>
-
-            <!-- Description -->
-            <div class="form-label">
-                <label for="description" class="form-label">Description:</label>
-                <textarea class="form-control" id="description" rows="4" placeholder="Enter task description here..."></textarea>
-            </div>
-
-            <!-- Due Date -->
-            <div class="form-label">
-                <label for="duedate" class="form-label">Due Date:</label>
-                <input type="date" class="form-control" id="dueDate" name="dueDate" required>
-            </div>
-
-            <!-- Priority Level -->
-            <div class="form-group">
-                <label for="priority">Priority:</label>
-                <select class="form-control form-select-sm" id="priority" name="priority">
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
-            </div>
-            
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-outline-success">Create Task</button>
-
-        </form>
-    </main>
+                <!-- Task Name --> 
+                <!-- maybe change class to mb-3 form-control -->
+                <div class="form-label">
+                    <label for="taskname" class="form-label">Task Name:</label>
+                    <input type="text" class="form-control" id="taskname" placeholder="Econ 302 Homework" required>
+                </div>
+    
+                <!-- Description -->
+                <div class="form-label">
+                    <label for="description" class="form-label">Description:</label>
+                    <textarea class="form-control" id="description" rows="4" placeholder="Enter task description here..."></textarea>
+                </div>
+    
+                <!-- Due Date -->
+                <div class="form-label">
+                    <label for="duedate" class="form-label">Due Date:</label>
+                    <input type="date" class="form-control" id="dueDate" name="dueDate" required>
+                </div>
+    
+                <!-- Priority Level -->
+                <div class="form-group">
+                    <label for="priority">Priority:</label>
+                    <select class="form-control form-select-sm" id="priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Create Task</button>
+                </div>
+    
+            </form>
+        </div>
+    </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
