@@ -56,26 +56,21 @@ footer {
     background-color: #7a5cc8; 
     transform: scale(1.05);
 }
-/* 
-.btn-primary {
-    background-color: #ffbacb; 
-    border-color: #ffbacb;
-    color: white;
-    cursor: pointer;
-}
-.btn-primary:hover, .btn-primary:focus {
-    background-color: #e8a2b8; 
-    border-color: #e8a2b8;
-    transform: scale(1.05); 
-} */
+
 .card {
   background-color: rgba(138, 137, 254, 0.2);
   border: none;
+  flex: 1 1 auto;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.card-img-top {
-  width: 100%; /* makes the image responsive by setting width to 100% of the parent */
-  height: auto; /* maintains the aspect ratio of the image */
-  object-fit: cover; /* covers the space of the specified area without distorting the image */
+
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:768px){
+  .welcome-container{
+    padding-bottom: 20px;
+  }
 }
