@@ -33,4 +33,4 @@ TaskWave is a Bootstrap-powered application designed to facilitate efficient tas
   - Mariamawit spearheaded the development of critical pages such as Home (landing page), Registration, and Log-in.
 - **Effective Communication**: Despite working on individual pages, we maintained constant communication and collaborated closely throughout the project's lifecycle.
 
-Check out the live demo of TaskWave [TaskWave Live Demo](https://task-wave-app.netlify.app).
+Check out our live demo of [TaskWave](https://task-wave-app.netlify.app).
